@@ -45,13 +45,13 @@ export function Hero() {
         className="absolute left-6 top-1/2 -translate-y-1/2 uppercase text-[9px] tracking-[0.6em] opacity-20 whitespace-nowrap hidden lg:block"
         style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
       >
-        Digital Product • Ritual Experience • Frequency Protocol
+        Orações Decretos Citações e Mantras Poderosos
       </div>
       <div
         className="absolute right-6 top-1/2 -translate-y-1/2 uppercase text-[9px] tracking-[0.6em] opacity-20 whitespace-nowrap hidden lg:block"
         style={{ writingMode: "vertical-rl" }}
       >
-        Ancestral Wisdom • Modern Interface • Est. MMXXIV
+        Orações Decretos Citações e Mantras Poderosos
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center container mx-auto px-6 relative z-10 text-center pb-20">
