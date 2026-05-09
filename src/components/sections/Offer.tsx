@@ -83,7 +83,7 @@ export function Offer() {
             </Button>
             <div className="flex items-center gap-8">
               <img
-                src="/src/public/safecheckout.png"
+                src="/safecheckout.png"
                 alt="Safe Checkout"
                 className="h-9 opacity-20"
                 referrerPolicy="no-referrer"

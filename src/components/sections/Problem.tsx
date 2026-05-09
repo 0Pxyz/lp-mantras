@@ -60,7 +60,7 @@ export function Problem() {
           >
             <div className="absolute inset-0 bg-gold-primary/5 blur-3xl rounded-full" />
             <img
-              src="/src/public/problem.avif"
+              src="/problem.avif"
               alt="Cinematic Meditation"
               className="relative rounded-xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] object-cover"
               referrerPolicy="no-referrer"
