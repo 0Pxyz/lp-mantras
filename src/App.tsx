@@ -10,8 +10,7 @@ import { Guarantee } from "@/src/components/sections/Guarantee";
 import { Footer } from "@/src/components/sections/Footer";
 import { FloatingParticles } from "@/src/components/ui/FloatingParticles";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +41,7 @@ export default function App() {
     <main className="relative min-h-screen">
       <FloatingParticles />
       <Analytics />
+      <SpeedInsights />
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -68,27 +68,7 @@ export default function App() {
           <div className="hidden md:block lg:w-48 text-right text-[9px] tracking-[0.4em] uppercase text-text-secondary opacity-30 font-sans pointer-events-none">
             Orações Decretos Citações e Mantras Poderosos
           </div>
-
-          {/* Mobile Toggle */}
-          <button
-            className="lg:hidden text-gold-primary p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
-
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-bg-secondary border-b border-gold-primary/10 overflow-hidden"
-            ></motion.div>
-          )}
-        </AnimatePresence>
       </nav>
 
       <section id="hero">
