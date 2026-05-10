@@ -7,3 +7,4 @@ coverage/
 .env*
 !.env.example
 cspell.json
+Todo.md
