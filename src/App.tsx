@@ -12,7 +12,7 @@ import { FloatingParticles } from "@/src/components/ui/FloatingParticles";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-
+import { Analytics } from "@vercel/analytics/next";
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +41,7 @@ export default function App() {
   return (
     <main className="relative min-h-screen">
       <FloatingParticles />
-
+      <Analytics />
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
